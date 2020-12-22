@@ -1,6 +1,6 @@
 # Git-Bot
 
-> A GitHub App built with [Probot](https://github.com/probot/probot) that A bot to automate git process of DifferentTech
+> A GitHub App built with [Probot](https://github.com/probot/probot) that A bot to automate git processes.
 
 ## Setup
 
@@ -29,8 +29,7 @@ docker run -e APP_ID=<app-id> -e PRIVATE_KEY=<pem-value> Git-Bot
 
 If you have suggestions for how Git-Bot could be improved, or want to report a bug, open an issue! We'd love all and any contributions.
 
-For more, check out the [Contributing Guide](CONTRIBUTING.md).
 
 ## License
 
-[ISC](LICENSE) © 2020 DifferentTech <www.different.com.au>
+[ISC](LICENSE) © 2020 Lakshan Bandara
