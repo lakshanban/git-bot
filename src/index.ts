@@ -1,15 +1,9 @@
 import { Probot } from "probot";
+import { checkDepreacatedTags } from "./services/pull-request-check"
 
 export = ({ app }: { app: Probot }) => {
-  app.on("issues.opened", async (context) => {
-    const issueComment = context.issue({
-      body: "Thanks for opening this issue!",
-    });
-    await context.octokit.issues.createComment(issueComment);
-  });
-  // For more information on building apps:
-  // https://probot.github.io/docs/
+  app.log.info("GIT-BOT at your service")
 
-  // To get your app running against GitHub, see:
-  // https://probot.github.io/docs/development/
+  /** handle depreacated tags in the andi PR's */
+  app.on("pull_request.opened", checkDepreacatedTags)
 };

@@ -19,6 +19,8 @@
     "test": "jest"
   },
   "dependencies": {
+    "dotenv": "^8.2.0",
+    "googleapis": "^66.0.0",
     "probot": "^10.9.5"
   },
   "devDependencies": {
